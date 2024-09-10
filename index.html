@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification with Backend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="otp-container">
+        <h2>OTP Verification</h2>
+        
+     
+        <div class="input-group">
+            <label for="categorySelect">Select Category:</label>
+            <select id="categorySelect">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="username">Username</option>
+            </select>
+        </div>
+        
+       
+        <div class="input-group">
+            <label for="phoneEmail">Enter Details:</label>
+            <input type="text" id="phoneEmail" placeholder="Enter Phone/Email/Username">
+            <button id="sendOtpBtn">Send OTP</button>
+        </div>
+        
+        
+        <div class="otp-section" style="display: none;">
+            <label for="otpInput">Enter OTP:</label>
+            <input type="text" id="otpInput" placeholder="Enter OTP">
+            <button id="verifyOtpBtn">Verify OTP</button>
+        </div>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
